@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="BLACK MONEY - Fastest Satta Matka results, live charts, and record charts for Mumbai, Goa, Bengaluru, Chennai, Hyderabad markets." />
+  <title>BLACK MONEY – Pese se pesa banta hai</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <span class="logo-crown"><i class="fas fa-crown"></i></span>
+        <span class="logo-text">Matka <span class="logo-accent">King</span></span>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
+        <ul>
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========== TICKER ========== -->
+  <div class="ticker-bar">
+    <div class="ticker-label"><i class="fas fa-bolt"></i> LIVE</div>
+    <div class="ticker-wrap">
+      <div class="ticker-content" id="tickerContent">
+        Mumbai: <span class="tick-num">47-56-23</span> &nbsp;|&nbsp;
+        Goa: <span class="tick-num">12-89-34</span> &nbsp;|&nbsp;
+        Bengaluru: <span class="tick-num">67-45-90</span> &nbsp;|&nbsp;
+        Chennai: <span class="tick-num">33-71-58</span> &nbsp;|&nbsp;
+        Hyderabad: <span class="tick-num">82-14-66</span> &nbsp;|&nbsp;
+        Mumbai: <span class="tick-num">47-56-23</span> &nbsp;|&nbsp;
+        Goa: <span class="tick-num">12-89-34</span> &nbsp;|&nbsp;
+        Bengaluru: <span class="tick-num">67-45-90</span> &nbsp;|&nbsp;
+        Chennai: <span class="tick-num">33-71-58</span> &nbsp;|&nbsp;
+        Hyderabad: <span class="tick-num">82-14-66</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="home">
+    <div class="hero-bg-overlay"></div>
+    <div class="container hero-content">
+      <div class="hero-badge"><i class="fas fa-fire"></i> India's #1 Result Website</div>
+      <h1 class="hero-title">Matka <span class="accent">King</span></h1>
+      <p class="hero-slogan">"Pese se pesa banta hai, <strong>BLACK MONEY</strong> bano"</p>
+      <p class="hero-desc">
+        Get the fastest, most accurate Satta Matka results from all major markets.<br />
+        Live charts, monthly records, and daily updates — all in one place!
+      </p>
+      <div class="hero-btns">
+        <a href="#live-result" class="btn btn-primary"><i class="fas fa-chart-line"></i> Live Results</a>
+        <a href="#monthly-chart" class="btn btn-outline"><i class="fas fa-calendar-alt"></i> Monthly Chart</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-num">5</span>
+          <span class="stat-label">Markets</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">24/7</span>
+          <span class="stat-label">Live Updates</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">100%</span>
+          <span class="stat-label">Accurate</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== LIVE RESULT ========== -->
+  <section class="section" id="live-result">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title"><i class="fas fa-bolt"></i> Live Results</h2>
+        <span class="section-badge live-badge"><span class="live-dot"></span> Live</span>
+      </div>
+      <p class="section-sub">Daily results from all major markets — updated in real time</p>
+
+      <div class="table-wrap">
+        <table class="result-table" id="liveResultTable">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th><i class="fas fa-star"></i> Mumbai</th>
+              <th>Goa</th>
+              <th>Bengaluru</th>
+              <th>Chennai</th>
+              <th>Hyderabad</th>
+            </tr>
+          </thead>
+          <tbody id="liveResultBody">
+            <!-- Rows injected by JS -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== MONTHLY CHART ========== -->
+  <section class="section section-alt" id="monthly-chart">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title"><i class="fas fa-calendar-alt"></i> Monthly Chart</h2>
+        <span class="month-label" id="currentMonth"></span>
+      </div>
+      <p class="section-sub">Complete month-wise record for all 5 markets</p>
+
+      <div class="table-wrap">
+        <table class="result-table monthly-table" id="monthlyTable">
+          <thead>
+            <tr>
+              <th>Day</th>
+              <th>Mumbai</th>
+              <th>Goa</th>
+              <th>Bengaluru</th>
+              <th>Chennai</th>
+              <th>Hyderabad</th>
+            </tr>
+          </thead>
+          <tbody id="monthlyBody">
+            <!-- Rows injected by JS -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== RECORD CHART ========== -->
+  <section class="section" id="record-chart">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title"><i class="fas fa-trophy"></i> Record Charts</h2>
+      </div>
+      <p class="section-sub">Click on a market to view its full record chart</p>
+
+      <div class="record-grid">
+        <div class="record-card" onclick="showRecordModal('Mumbai Matka', 'mumbai')">
+          <div class="record-icon"><i class="fas fa-city"></i></div>
+          <div class="record-info">
+            <h3>Mumbai Matka</h3>
+            <p>Evening Open: <span class="rec-time">06:30 PM</span></p>
+            <p>Evening Close: <span class="rec-time">08:30 PM</span></p>
+          </div>
+          <div class="record-arrow"><i class="fas fa-chevron-right"></i></div>
+        </div>
+
+        <div class="record-card" onclick="showRecordModal('Goa Market', 'goa')">
+          <div class="record-icon" style="background:#16a34a22;color:#22c55e;"><i class="fas fa-umbrella-beach"></i></div>
+          <div class="record-info">
+            <h3>Goa Market</h3>
+            <p>Evening Open: <span class="rec-time">07:00 PM</span></p>
+            <p>Evening Close: <span class="rec-time">09:00 PM</span></p>
+          </div>
+          <div class="record-arrow"><i class="fas fa-chevron-right"></i></div>
+        </div>
+
+        <div class="record-card" onclick="showRecordModal('Bengaluru King', 'bengaluru')">
+          <div class="record-icon" style="background:#7c3aed22;color:#a78bfa;"><i class="fas fa-crown"></i></div>
+          <div class="record-info">
+            <h3>Bengaluru King</h3>
+            <p>Evening Open: <span class="rec-time">05:30 PM</span></p>
+            <p>Evening Close: <span class="rec-time">07:30 PM</span></p>
+          </div>
+          <div class="record-arrow"><i class="fas fa-chevron-right"></i></div>
+        </div>
+
+        <div class="record-card" onclick="showRecordModal('Chennai Bazar', 'chennai')">
+          <div class="record-icon" style="background:#0e7490;color:#22d3ee;"><i class="fas fa-store"></i></div>
+          <div class="record-info">
+            <h3>Chennai Bazar</h3>
+            <p>Evening Open: <span class="rec-time">08:00 PM</span></p>
+            <p>Evening Close: <span class="rec-time">10:00 PM</span></p>
+          </div>
+          <div class="record-arrow"><i class="fas fa-chevron-right"></i></div>
+        </div>
+
+        <div class="record-card" onclick="showRecordModal('Hyderabad Night', 'hyderabad')">
+          <div class="record-icon" style="background:#c2410c22;color:#fb923c;"><i class="fas fa-moon"></i></div>
+          <div class="record-info">
+            <h3>Hyderabad Night</h3>
+            <p>Evening Open: <span class="rec-time">09:00 PM</span></p>
+            <p>Evening Close: <span class="rec-time">11:00 PM</span></p>
+          </div>
+          <div class="record-arrow"><i class="fas fa-chevron-right"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== MODAL ========== -->
+  <div class="modal-overlay" id="modalOverlay" onclick="closeModal()">
+    <div class="modal-box" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal()"><i class="fas fa-times"></i></button>
+      <h3 class="modal-title" id="modalTitle"></h3>
+      <div class="table-wrap">
+        <table class="result-table">
+          <thead>
+            <tr>
+              <th>Month</th>
+              <th>Open</th>
+              <th>Jodi</th>
+              <th>Close</th>
+            </tr>
+          </thead>
+          <tbody id="modalBody"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== INFORMATION ========== -->
+  <section class="section section-alt" id="about">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title"><i class="fas fa-info-circle"></i> Information</h2>
+      </div>
+
+      <div class="info-grid">
+        <div class="info-card">
+          <div class="info-icon"><i class="fas fa-question-circle"></i></div>
+          <h3>What is BLACK MONEY?</h3>
+          <p>
+            BLACK MONEY is India's most trusted and fastest result website for Satta Matka markets.
+            We provide real-time results, accurate charts, and monthly records for top markets
+            including Mumbai, Goa, Bengaluru, Chennai, and Hyderabad.
+          </p>
+          <p>
+            Founded with the mission to deliver the most reliable results to players across India,
+            BLACK MONEY has become the go-to destination for millions of users daily.
+          </p>
+        </div>
+
+        <div class="info-card">
+          <div class="info-icon"><i class="fas fa-cogs"></i></div>
+          <h3>How It Works</h3>
+          <ul class="info-list">
+            <li><i class="fas fa-check-circle"></i> Results are collected from official market sources every day.</li>
+            <li><i class="fas fa-check-circle"></i> Numbers are published on this site within seconds of announcement.</li>
+            <li><i class="fas fa-check-circle"></i> Live ticker at the top shows the latest results at a glance.</li>
+            <li><i class="fas fa-check-circle"></i> Monthly chart gives a full picture of past results.</li>
+            <li><i class="fas fa-check-circle"></i> Record charts help you track patterns and trends over time.</li>
+          </ul>
+        </div>
+
+        <div class="info-card">
+          <div class="info-icon"><i class="fas fa-clock"></i></div>
+          <h3>Market Timings</h3>
+          <ul class="timing-list">
+            <li>
+              <span class="market-name">Mumbai Matka</span>
+              <span class="market-time">06:30 PM – 08:30 PM</span>
+            </li>
+            <li>
+              <span class="market-name">Goa Market</span>
+              <span class="market-time">07:00 PM – 09:00 PM</span>
+            </li>
+            <li>
+              <span class="market-name">Bengaluru King</span>
+              <span class="market-time">05:30 PM – 07:30 PM</span>
+            </li>
+            <li>
+              <span class="market-name">Chennai Bazar</span>
+              <span class="market-time">08:00 PM – 10:00 PM</span>
+            </li>
+            <li>
+              <span class="market-name">Hyderabad Night</span>
+              <span class="market-time">09:00 PM – 11:00 PM</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== DISCLAIMER ========== -->
+  <section class="disclaimer-section">
+    <div class="container">
+      <div class="disclaimer-box">
+        <div class="disclaimer-icon"><i class="fas fa-exclamation-triangle"></i></div>
+        <div class="disclaimer-text">
+          <h3>Disclaimer</h3>
+          <p>
+            <strong>This website is for informational purposes only.</strong>
+            We are not responsible for any profit or loss. Satta Matka is illegal in many parts of India.
+            Please check your local laws before participating. We do not promote gambling in any form.
+            Use this website strictly for informational purposes.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer" id="contact">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <div class="footer-logo">
+          <i class="fas fa-crown"></i> Matka <span class="accent">King</span>
+        </div>
+        <p class="footer-tagline">"Pese se pesa banta hai, BLACK MONEY bano"</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a>
+          <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>About Us</h4>
+        <p>
+          BLACK MONEY is India's fastest satta matka result website. We provide accurate,
+          real-time results from all major matka markets across India.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#home"><i class="fas fa-angle-right"></i> Home</a></li>
+          <li><a href="#live-result"><i class="fas fa-angle-right"></i> Live Results</a></li>
+          <li><a href="#monthly-chart"><i class="fas fa-angle-right"></i> Monthly Chart</a></li>
+          <li><a href="#record-chart"><i class="fas fa-angle-right"></i> Record Charts</a></li>
+          <li><a href="#about"><i class="fas fa-angle-right"></i> About</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Terms & Contact</h4>
+        <p class="footer-terms">
+          By using this website, you agree that you are above 18 years of age and
+          this site is for informational purposes only.
+        </p>
+        <ul class="contact-list">
+          <li><i class="fas fa-envelope"></i> info@matka-king.in</li>
+          <li><i class="fas fa-phone"></i> +91 98765 43210</li>
+          <li><i class="fab fa-telegram-plane"></i> t.me/matkaking</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2025 BLACK MONEY. All rights reserved. | For informational purposes only.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
